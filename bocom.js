@@ -12,21 +12,10 @@ function makeid(length) {
     return result;
  }
 
-function idphone(length) {
-    var result           = '';
-    var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-       result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
- }
-
 const data = {
   email: `koenur5+${makeid(5)}@gmail.com`,
   password: 'kayuagung588'
 }
-
 
 const request = rp.defaults({
   baseUrl: 'https://iphone-xml.booking.com/json/',
@@ -34,7 +23,7 @@ const request = rp.defaults({
   qs: {
     user_os: '8.0.0',
     user_version: '22.9-android',
-    device_id: 'f0ab31ce-a92b-4ffd-a28b-e7897d2${idphone(5)}',
+    device_id: 'cfc90fc1-945a-4396-87d7-6847af100317',
     network_type: 'wifi',
     languagecode: 'en-us',
     display: 'normal_xxhdpi',
@@ -76,8 +65,8 @@ console.log(`[+] Register Success | ${data.email}:${data.password}`)
         'hotel_id': id,
         'list_dest_id': 'city%3A%3A-2679652',
         'update_list_search_config': 1,
-        'checkin': '2020-06-27',
-        'checkout': '2020-06-28',
+        'checkin': '2020-06-28',
+        'checkout': '2020-06-29',
         'num_rooms': 1,
         'num_adults': 2,
         'num_children': 0,
