@@ -13,15 +13,6 @@ function makeid(length) {
     return result;
  }
 
-function idphone(length) {
-    var result           = '';
-    var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-       result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
- }
 
 const data = {
   email: `koenur5+${makeid(5)}@gmail.com`,
@@ -35,7 +26,7 @@ const request = rp.defaults({
   qs: {
     user_os: '8.0.0',
     user_version: '22.9-android',
-    device_id: 'f0ab31ce-a92b-4ffd-a28b-e7897d2${idphone(5)}',
+    device_id: 'cfc90fc1-945a-4396-87d7-6847af100317',
     network_type: 'wifi',
     languagecode: 'en-us',
     display: 'normal_xxhdpi',
